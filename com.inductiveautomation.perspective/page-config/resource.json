@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "mohamedalcafory",
+      "timestamp": "2023-03-09T15:22:08Z"
+    },
+    "lastModificationSignature": "ee2577e70ae18ff822e7b331ca8971fca5977bee775cb34adfbc74d2e6522c88"
+  }
+}

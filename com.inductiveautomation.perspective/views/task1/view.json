@@ -1,0 +1,64 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "basis": "208px"
+        },
+        "propConfig": {
+          "props.params.card_udt": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "expression",
+                "tagPath": "\"[default]\"+{session.custom.text}"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "path": "std_card1"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_1"
+        },
+        "position": {
+          "basis": "160px"
+        },
+        "propConfig": {
+          "props.params.chart_udt": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "expression",
+                "tagPath": "\"[default]\"+{session.custom.text}"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "path": "std_card_chart"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

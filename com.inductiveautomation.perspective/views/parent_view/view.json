@@ -1,0 +1,89 @@
+{
+  "custom": {},
+  "params": {
+    "parent": {
+      "Products": {
+        "bad_products": 1,
+        "good_products": 10,
+        "total_product": 9
+      },
+      "elapsed_time": {
+        "elapsed_time": 222,
+        "start_time": 1675764000000
+      },
+      "machine_run": {
+        "bool": false,
+        "machine_data": 0
+      },
+      "shifts": {
+        "end_time": 1700,
+        "shift_name": "shiftA",
+        "start_time": 900
+      }
+    }
+  },
+  "propConfig": {
+    "params.parent": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "height": 178,
+          "width": 860,
+          "x": -95
+        },
+        "propConfig": {
+          "props.params.card_udt": {
+            "binding": {
+              "config": {
+                "path": "view.params.parent"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "path": "std_card1"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_0"
+        },
+        "position": {
+          "height": 259,
+          "width": 927,
+          "x": -102,
+          "y": 205
+        },
+        "propConfig": {
+          "props.params.chart_udt": {
+            "binding": {
+              "config": {
+                "path": "view.params.parent"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "path": "std_card_chart"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

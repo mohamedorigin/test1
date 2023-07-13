@@ -1,0 +1,155 @@
+{
+  "custom": {},
+  "params": {
+    "card_udt": {
+      "Products": {
+        "bad_products": null,
+        "good_products": null,
+        "total_product": 3
+      },
+      "elapsed_time": {
+        "elapsed_time": 87,
+        "start_time": 1675764000000
+      },
+      "machine_run": {
+        "bool": false,
+        "machine_data": 0
+      },
+      "shifts": {
+        "end_time": 1700,
+        "shift_name": "shiftA",
+        "start_time": 900
+      }
+    }
+  },
+  "propConfig": {
+    "params.card_udt": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "shift_name_value"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1187,
+          "x": 0.5288,
+          "y": 0.2743
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.card_udt.shifts.shift_name"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "total_product_label"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1487,
+          "x": 0.36,
+          "y": 0.6186
+        },
+        "props": {
+          "text": "Total products"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "elpsed_time_value"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1013,
+          "x": 0.5313,
+          "y": 0.4766
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.card_udt.elapsed_time.elapsed_time"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "total_product_value"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.0963,
+          "x": 0.53,
+          "y": 0.6385
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.card_udt.Products.total_product"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "elapsed_time_label"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1363,
+          "x": 0.3625,
+          "y": 0.4566
+        },
+        "props": {
+          "text": "Elapsed Time"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "shift_name_label"
+        },
+        "position": {
+          "height": 0.04,
+          "width": 0.1113,
+          "x": 0.3625,
+          "y": 0.2677
+        },
+        "props": {
+          "text": "Shift name"
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "aspectRatio": "16:3",
+      "mode": "percent"
+    },
+    "type": "ia.container.coord"
+  }
+}

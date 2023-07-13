@@ -1,0 +1,45 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "mysqldb",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "a4b1eaa4a08862ca4d928acac30383c333fb984ce0f4f2db928e500ec25adc9d",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "mohamedalcafory",
+      "timestamp": "2023-02-06T13:35:39Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "start",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "end",
+        "sqlType": 3
+      }
+    ]
+  }
+}

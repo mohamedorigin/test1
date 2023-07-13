@@ -1,0 +1,16 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "mohamedalcafory",
+      "timestamp": "2023-02-05T11:51:57Z"
+    },
+    "lastModificationSignature": "908c951d8d861f00fe18e3212a734c42a85654d95903b7564c6e671583f73f19"
+  }
+}

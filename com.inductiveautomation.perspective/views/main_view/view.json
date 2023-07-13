@@ -1,0 +1,73 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 563,
+      "width": 686
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "height": 254,
+          "width": 685
+        },
+        "propConfig": {
+          "props.params.parent": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]taks1_ins1"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "path": "parent_view"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView_0"
+        },
+        "position": {
+          "height": 320,
+          "width": 669,
+          "y": 346
+        },
+        "propConfig": {
+          "props.params.parent": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]taks1_ins2"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "path": "parent_view"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "position": {
+      "x": -200,
+      "y": -91
+    },
+    "type": "ia.container.coord"
+  }
+}

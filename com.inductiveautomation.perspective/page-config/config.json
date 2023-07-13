@@ -1,0 +1,51 @@
+{
+  "pages": {
+    "/": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 150,
+            "viewParams": {},
+            "viewPath": "session_task/text_view"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "test/lotfy"
+    },
+    "/text_input/": {
+      "docks": {
+        "left": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 150,
+            "viewParams": {},
+            "viewPath": "session_task/text_view"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "task1"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}

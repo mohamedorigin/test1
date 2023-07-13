@@ -1,0 +1,120 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "custom": {
+          "key": [
+            {
+              "aggregation": "Minimum",
+              "alias": "bad"
+            },
+            {
+              "aggregation": "Minimum",
+              "alias": "good"
+            }
+          ]
+        },
+        "meta": {
+          "name": "TimeSeriesChart"
+        },
+        "position": {
+          "breakpoints": [
+            {
+              "colIndex": 4,
+              "name": "sm",
+              "order": 1,
+              "rowIndex": 0,
+              "span": 1
+            },
+            {
+              "colIndex": 0,
+              "name": "md",
+              "order": 1,
+              "rowIndex": 0,
+              "span": 9
+            },
+            {
+              "colIndex": 0,
+              "name": "lg",
+              "order": 1,
+              "rowIndex": 0,
+              "span": 9
+            }
+          ],
+          "height": 235
+        },
+        "propConfig": {
+          "custom.key[0].path": {
+            "binding": {
+              "config": {
+                "expression": "\"[default]\"+{session.custom.text}+\"/sim/bad_sim\""
+              },
+              "type": "expr"
+            }
+          },
+          "custom.key[1].path": {
+            "binding": {
+              "config": {
+                "expression": "\"[default]\"+{session.custom.text}+\"/sim/good_sim\""
+              },
+              "type": "expr"
+            }
+          },
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "mostRecent": "10",
+                  "mostRecentUnits": "MIN"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "polling": {
+                  "enabled": true,
+                  "rate": "1"
+                },
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "100",
+                  "type": "FIXED"
+                },
+                "tags": "{this.custom.key}",
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "legend": {
+            "position": "right",
+            "visible": true
+          },
+          "series": [
+            {
+              "name": "count"
+            }
+          ],
+          "title": {
+            "font": {
+              "color": "#180000"
+            },
+            "text": "bad good",
+            "visible": true
+          }
+        },
+        "type": "ia.chart.timeseries"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.column"
+  }
+}
